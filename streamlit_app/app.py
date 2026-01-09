@@ -131,12 +131,10 @@ spc_summary = (
         avg_range=("R", "mean"),
         max_range=("R", "max")
     )
-    .to_frame(name="Value")
+    .T
 )
 
 st.table(spc_summary)
-
-st.success("SPC Status: Process In-Control (No Special Cause Detected)")
 
 # --------------------------------------------------
 # KEY INSIGHTS
